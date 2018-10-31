@@ -19,7 +19,7 @@
                 a[i][h]--;
             }
         }
-        f.writeBytes("A");
+        f.writeBytes("" + eulerCycle.get(0));
         for (int p = 1; p < eulerCycle.size(); ++p) {
             f.writeBytes(" " + (char) ('A' + eulerCycle.get(p)));
         }
